@@ -5,6 +5,19 @@ import './assets/css/argon.css';
 
 
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+        display:'none'
+    }
+  }
+  handleClick = (e) =>{
+    console.log(e,'=>>>>>>>>>');
+    if(this.state.display!='block')
+      this.setState({display:'block'});
+    else
+      this.setState({display:'none'});
+  }
   render() {
     return (
       <div className="App">
@@ -29,7 +42,7 @@ class App extends Component {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr onClick={(e)=>{this.handleClick()}}>
                     <th scope="row">
                       <div className="media align-items-center">
                         <a href="#" className="avatar rounded-circle mr-3">
@@ -64,7 +77,9 @@ class App extends Component {
                       </div>
                     </td>
                   </tr>
-                  <tr>
+                  <div style={{height:'200px', display:this.state.display}}>
+                  </div>
+                  <tr onClick={(e)=>{this.handleClick()}}>
                     <th scope="row">
                       <div className="media align-items-center">
                         <a href="#" className="avatar rounded-circle mr-3">
@@ -99,7 +114,7 @@ class App extends Component {
                       </div>
                     </td>
                   </tr>
-                  <tr>
+                  <tr onClick={(e)=>{this.handleClick()}}>
                     <th scope="row">
                       <div className="media align-items-center">
                         <a href="#" className="avatar rounded-circle mr-3">
@@ -134,7 +149,7 @@ class App extends Component {
                       </div>
                     </td>
                   </tr>
-                  <tr>
+                  <tr onClick={(e)=>{this.handleClick()}}>
                     <th scope="row">
                       <div className="media align-items-center">
                         <a href="#" className="avatar rounded-circle mr-3">
