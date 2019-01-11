@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './assets/css/argon.css';
+
 
 class App extends Component {
   render() {
@@ -31,7 +33,7 @@ class App extends Component {
                     <th scope="row">
                       <div className="media align-items-center">
                         <a href="#" className="avatar rounded-circle mr-3">
-                          <img alt="Image placeholder" src="../assets/img/theme/insta.jpeg"/>
+                          <img alt="Image placeholder" src="insta.jpeg"/>
                         </a>
                         <div className="media-body">
                           <span className="mb-0 text-sm">Instagram</span>
@@ -66,7 +68,7 @@ class App extends Component {
                     <th scope="row">
                       <div className="media align-items-center">
                         <a href="#" className="avatar rounded-circle mr-3">
-                          <img alt="Image placeholder" src="../assets/img/theme/fb.png"/>
+                          <img alt="Image placeholder" src="fb.png"/>
                         </a>
                         <div className="media-body">
                           <span className="mb-0 text-sm">Facebook</span>
@@ -101,7 +103,7 @@ class App extends Component {
                     <th scope="row">
                       <div className="media align-items-center">
                         <a href="#" className="avatar rounded-circle mr-3">
-                          <img alt="Image placeholder" src="../assets/img/theme/whatsapp.jpeg"/>
+                          <img alt="Image placeholder" src="whatsapp.jpeg"/>
                         </a>
                         <div className="media-body">
                           <span className="mb-0 text-sm">Whatsapp</span>
@@ -136,7 +138,7 @@ class App extends Component {
                     <th scope="row">
                       <div className="media align-items-center">
                         <a href="#" className="avatar rounded-circle mr-3">
-                          <img alt="Image placeholder" src="../assets/img/theme/telegram.png"/>
+                          <img alt="Image placeholder" src="telegram.png"/>
                         </a>
                         <div className="media-body">
                           <span className="mb-0 text-sm">Telegram</span>
