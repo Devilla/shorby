@@ -74,6 +74,17 @@ class App extends Component {
                     </td>
                   </tr>
                   <div style={{height:'200px', display:this.state.display1}}>
+                    <div className="link-item__body"><div className="link-body-info">
+                      <div className="hidden-wrap">
+                        <div className="link-info-url small line-clamp">
+                        <a target="_blank"></a>
+                        </div>
+                        <div className="link-info-date small">created on January 10, 2019</div>
+                        </div>
+                        <div className="link-pixel-sets mt1"><span className="small">Tracking Pixels:</span>&nbsp;
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <tr onClick={()=>{this.state.display2=='none'?this.setState({display2:'block'}):this.setState({display2:'none'})}}>
                     <th scope="row">
@@ -111,6 +122,17 @@ class App extends Component {
                     </td>
                   </tr>
                   <div style={{height:'200px', display:this.state.display2}}>
+                  <div className="link-item__body"><div className="link-body-info">
+                    <div className="hidden-wrap">
+                      <div className="link-info-url small line-clamp">
+                      <a target="_blank"></a>
+                      </div>
+                      <div className="link-info-date small">created on January 10, 2019</div>
+                      </div>
+                      <div className="link-pixel-sets mt1"><span className="small">Tracking Pixels:</span>&nbsp;
+                      </div>
+                    </div>
+                  </div>
                   </div>
                   <tr onClick={()=>{this.state.display3=='none'?this.setState({display3:'block'}):this.setState({display3:'none'})}}>
                     <th scope="row">
@@ -148,6 +170,17 @@ class App extends Component {
                     </td>
                   </tr>
                   <div style={{height:'200px', display:this.state.display3}}>
+                  <div className="link-item__body"><div className="link-body-info">
+                    <div className="hidden-wrap">
+                      <div className="link-info-url small line-clamp">
+                      <a target="_blank"></a>
+                      </div>
+                      <div className="link-info-date small">created on January 10, 2019</div>
+                      </div>
+                      <div className="link-pixel-sets mt1"><span className="small">Tracking Pixels:</span>&nbsp;
+                      </div>
+                    </div>
+                  </div>
                   </div>
                   <tr onClick={()=>{this.state.display4=='none'?this.setState({display4:'block'}):this.setState({display4:'none'})}}>
                     <th scope="row">
@@ -186,6 +219,17 @@ class App extends Component {
                     </td>
                   </tr>
                   <div style={{height:'200px', display:this.state.display4}}>
+                  <div className="link-item__body"><div className="link-body-info">
+                    <div className="hidden-wrap">
+                      <div className="link-info-url small line-clamp">
+                      <a target="_blank"></a>
+                      </div>
+                      <div className="link-info-date small">created on January 10, 2019</div>
+                      </div>
+                      <div className="link-pixel-sets mt1"><span className="small">Tracking Pixels:</span>&nbsp;
+                      </div>
+                    </div>
+                  </div>
                   </div>
                 </tbody>
               </table>
