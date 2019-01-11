@@ -8,15 +8,11 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-        display:'none'
+        display1:'none',
+        display2:'none',
+        display3:'none',
+        display4:'none'
     }
-  }
-  handleClick = (e) =>{
-    console.log(e,'=>>>>>>>>>');
-    if(this.state.display!='block')
-      this.setState({display:'block'});
-    else
-      this.setState({display:'none'});
   }
   render() {
     return (
@@ -42,7 +38,7 @@ class App extends Component {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr onClick={(e)=>{this.handleClick()}}>
+                  <tr onClick={()=>{this.state.display1=='none'?this.setState({display1:'block'}):this.setState({display1:'none'})}}>
                     <th scope="row">
                       <div className="media align-items-center">
                         <a href="#" className="avatar rounded-circle mr-3">
@@ -77,9 +73,9 @@ class App extends Component {
                       </div>
                     </td>
                   </tr>
-                  <div style={{height:'200px', display:this.state.display}}>
+                  <div style={{height:'200px', display:this.state.display1}}>
                   </div>
-                  <tr onClick={(e)=>{this.handleClick()}}>
+                  <tr onClick={()=>{this.state.display2=='none'?this.setState({display2:'block'}):this.setState({display2:'none'})}}>
                     <th scope="row">
                       <div className="media align-items-center">
                         <a href="#" className="avatar rounded-circle mr-3">
@@ -114,7 +110,9 @@ class App extends Component {
                       </div>
                     </td>
                   </tr>
-                  <tr onClick={(e)=>{this.handleClick()}}>
+                  <div style={{height:'200px', display:this.state.display2}}>
+                  </div>
+                  <tr onClick={()=>{this.state.display3=='none'?this.setState({display3:'block'}):this.setState({display3:'none'})}}>
                     <th scope="row">
                       <div className="media align-items-center">
                         <a href="#" className="avatar rounded-circle mr-3">
@@ -149,7 +147,9 @@ class App extends Component {
                       </div>
                     </td>
                   </tr>
-                  <tr onClick={(e)=>{this.handleClick()}}>
+                  <div style={{height:'200px', display:this.state.display3}}>
+                  </div>
+                  <tr onClick={()=>{this.state.display4=='none'?this.setState({display4:'block'}):this.setState({display4:'none'})}}>
                     <th scope="row">
                       <div className="media align-items-center">
                         <a href="#" className="avatar rounded-circle mr-3">
@@ -185,6 +185,8 @@ class App extends Component {
                       </div>
                     </td>
                   </tr>
+                  <div style={{height:'200px', display:this.state.display4}}>
+                  </div>
                 </tbody>
               </table>
             </div>
