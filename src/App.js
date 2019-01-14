@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './assets/css/argon.css';
-
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+import CreateLink from './CreateLink';
 
 class App extends Component {
   constructor(){
@@ -14,9 +15,13 @@ class App extends Component {
         display4:'none'
     }
   }
+
   render() {
     return (
       <div className="App">
+      <BrowserRouter>
+      <div>
+      <Route path='/create-link'  component={CreateLink}/>
       <div className="row">
         <div className="col">
           <div className="card shadow">
@@ -25,7 +30,7 @@ class App extends Component {
             </div>
             <button className="btn btn-icon btn-3 btn-primary" type="button" style={{marginLeft: '20px', width: '200px'}}>
               <span className="btn-inner--icon"><i className="ni ni-circle-08"></i></span>
-              <span className="btn-inner--text">Create Bio Link</span>
+              <span className="btn-inner--text" ><Link to='/create-link' style={{color:'#ffffff'}}>Create Bio Link</Link></span>
             </button>
             <div className="table-responsive" style={{marginTop:"50px"}}>
               <table className="table align-items-center table-flush">
@@ -65,7 +70,7 @@ class App extends Component {
                       </div>
                     </td>
                     <td className="text-right">
-                      <button className="btn btn-primary" type="button">Edit</button>
+                      <button className="btn btn-primary" type="button" >Edit</button>
                       <div className="dropdown">
                         <a className="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <i className="fa fa-trash"></i>
@@ -262,6 +267,8 @@ class App extends Component {
           </div>
         </div>
       </div>
+      </div>
+      </BrowserRouter>
       </div>
     );
   }
