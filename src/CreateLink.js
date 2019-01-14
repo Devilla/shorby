@@ -7,12 +7,12 @@ export default class CreateLink extends Component {
   constructor() {
     super();
     this.state = {
-
+      layoutWidth:'500px'
     }
   }
     render(){
       return (
-        <div style={{background:'#883a75', height:'1029px', width:'500px'}}>
+        <div style={{background:'#883a75', height:'1029px', width:this.state.layoutWidth}}>
         <div className="container">
         <header>
         <h1 align="center" style={{color:'white'}}>Test</h1>
@@ -24,6 +24,8 @@ export default class CreateLink extends Component {
         <div  className= "row" style={{marginTop:'20px', background:'#ffffff', borderRadius:'50px'}}><h2 style={{marginLeft:'200px',color:'#883a75'}}>Blog</h2></div>
         <div  className= "row" style={{marginTop:'20px', background:'#ffffff', borderRadius:'50px'}}><h2 style={{marginLeft:'200px',color:'#883a75'}}>Resume</h2></div>
         </div>
+        <button className="btn btn-primary" onClick={()=>{this.setState({layoutWidth:''})}}> Casual</button>
+        <button className="btn btn-info" onClick={()=>{this.setState({layoutWidth:'500px'})}}>Professional</button>
         </div>
       );
     }
