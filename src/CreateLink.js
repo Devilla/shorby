@@ -12,7 +12,7 @@ export default class CreateLink extends Component {
   }
     render(){
       return (
-        <div style={{background:'#883a75', height:'1029px', width:this.state.layoutWidth}}>
+        <div style={{background:'#883a75', height:'1029px', width:this.state.layoutWidth, borderRadius:'10px'}}>
         <div className="container">
         <header>
         <h1 align="center" style={{color:'white'}}>Test</h1>
