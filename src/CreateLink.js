@@ -79,11 +79,11 @@ export default class CreateLink extends Component {
         <h1 align="center" style={{color:'white'}}>Test</h1>
         </header>
         <div className="row">
-        <div className= "col" style={{background:'#ffffff', borderRadius:'50px'}}><img src ="insta.jpeg" width="50px"/></div>
-        <div  className= "col" style={{background:'#ffffff', borderRadius:'50px'}}><img src ="whatsapp.jpeg" width="50px"/></div>
+        <div className= "col" style={{background:'#ffffff', borderRadius:'50px', margin:'auto'}}><img src ="insta.jpeg" width="30px"/></div>
+        <div  className= "col" style={{background:'#ffffff', borderRadius:'50px', margin:'auto'}}><img src ="whatsapp.jpeg" width="30px"/></div>
         </div>
-        <div  className= "row" style={{marginTop:'20px', background:'#ffffff', borderRadius:'50px'}}><h2 style={{marginLeft:'200px',color:'#883a75'}}>Blog</h2></div>
-        <div  className= "row" style={{marginTop:'20px', background:'#ffffff', borderRadius:'50px'}}><h2 style={{marginLeft:'200px',color:'#883a75'}}>Resume</h2></div>
+        <div  className= "row" style={{marginTop:'20px', background:'#ffffff', borderRadius:'50px'}}><h2 style={{margin:'auto',color:'#883a75'}}>Blog</h2></div>
+        <div  className= "row" style={{marginTop:'20px', background:'#ffffff', borderRadius:'50px'}}><h2 style={{margin:'auto',color:'#883a75'}}>Resume</h2></div>
         </div>
         </div>
         </div>

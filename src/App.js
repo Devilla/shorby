@@ -28,9 +28,12 @@ class App extends Component {
             <div className="card-header border-0">
               <h3 style={{color:'#5e72e4', fontWeight:'bold', fontSize:'22px'}} className="mb-0">Brand Name</h3>
             </div>
-            <button className="btn btn-icon btn-3 btn-primary" type="button" style={{marginLeft: '20px', width: '200px'}}>
+
+            <button className="btn btn-icon btn-3 btn-info" type="button" style={{marginLeft: '20px', width: '200px'}}>
+            <Link to='/create-link' style={{color:'#ffffff', marginLeft:'10px'}}>
               <span className="btn-inner--icon"><i className="ni ni-circle-08"></i></span>
-              <span className="btn-inner--text" ><Link to='/create-link' style={{color:'#ffffff'}}>Create Bio Link</Link></span>
+              <span className="btn-inner--text" >Create Bio Link</span>
+              </Link>
             </button>
             <div className="table-responsive" style={{marginTop:"50px"}}>
               <table className="table align-items-center table-flush">
