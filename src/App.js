@@ -7,9 +7,7 @@ import Homepage from './components/Homepage';
 
 class App extends Component {
 
-componentWillUnmount(){
-  console.log('====================================>>LOL');
-}
+
 
   render() {
     return (
