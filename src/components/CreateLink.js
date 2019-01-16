@@ -9,12 +9,13 @@ export default class CreateLink extends Component {
     this.state = {
       layoutWidth:'500px',
       backgroundColor:'#883a75',
+      backgroundImage: 'linear-gradient(111.7deg, #fbc606 2.4%, #e0525f 28.3%, #c24e9a 46.2%, #20adbe 79.4%, #169e5f 100.2%)',
       pageTitle:'Test'
     }
   }
     render(){
       return (
-        <div className="row">
+        <div className="row" style={{marginBottom:'1000px'}}>
         <div className="col-md-4" >
 
           <div className="card card-pricing bg-gradient-success border-0 text-center mb-4">
