@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
-import './assets/css/argon.css';
+import '../assets/css/argon.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 export default class CreateLink extends Component {
@@ -20,8 +19,6 @@ export default class CreateLink extends Component {
               <h4 className="text-uppercase ls-1 text-white py-3 mb-0">Create Your Link</h4>
             </div>
             <div className="card-body px-lg-7">
-              {/*<div className="display-2 text-white">$49</div>
-              <span className=" text-white">per application</span>*/}
               <button className="btn btn-primary" onClick={()=>{this.setState({layoutWidth:''})}}> Casual</button>
               <button className="btn btn-info" onClick={()=>{this.setState({layoutWidth:'500px'})}}>Professional</button>
               <ul className="list-unstyled my-4">
