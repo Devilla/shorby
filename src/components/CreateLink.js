@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../assets/css/argon.css';
+import './CreateLink.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 export default class CreateLink extends Component {
@@ -19,8 +20,8 @@ export default class CreateLink extends Component {
               <h4 className="text-uppercase ls-1 text-white py-3 mb-0">Create Your Link</h4>
             </div>
             <div className="card-body px-lg-7">
-              <button className="btn btn-primary" onClick={()=>{this.setState({layoutWidth:''})}}> Casual</button>
-              <button className="btn btn-info" onClick={()=>{this.setState({layoutWidth:'500px'})}}>Professional</button>
+              <button className="btn btn-info" onClick={()=>{this.setState({layoutWidth:''})}}> Casual</button>
+              <button className="btn btn-primary" onClick={()=>{this.setState({layoutWidth:'500px'})}}>Professional</button>
               <ul className="list-unstyled my-4">
                 <li>
                   <div className="d-flex align-items-center">
@@ -61,8 +62,85 @@ export default class CreateLink extends Component {
                     </div>
                   </div>
                 </li>
+                <li>
+                  <div className="d-flex align-items-center">
+                    <div>
+                      <div className="icon icon-xs icon-shape bg-white shadow rounded-circle">
+                        <i className="fas fa-pen-fancy"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <span className="pl-2 text-sm text-white"><strong>Page Title</strong></span>
+                      <input type="text" name="" value="Test" placeholder="Rediff/Blog" className="form-control"/>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="d-flex align-items-center">
+                    <div>
+                      <span className="mt-3 mb-3 pl-2 text-sm text-white"><strong>Themes</strong></span>
+
+                      <div className="row">
+                        <div className="col"><div className="theme-back">A</div> </div>
+                        <div className="col"><div className="theme-back">A</div> </div>
+                        <div className="col"><div className="theme-back">A</div> </div>
+                        <div className="col" ><div className="theme-back">A</div> </div>
+                        <div className="col" ><div className="theme-back">A</div> </div>
+                      </div>
+                      <div className="row mt-2">
+                        <div className="col"><div className="theme-back">A</div> </div>
+                        <div className="col"><div className="theme-back">A</div> </div>
+                        <div className="col"><div className="theme-back">A</div> </div>
+                        <div className="col" ><div className="theme-back">A</div> </div>
+                        <div className="col" ><div className="theme-back">A</div> </div>
+                      </div>
+                      <div className="row mt-2">
+                        <div className="col"><div className="theme-back">A</div> </div>
+                        <div className="col"><div className="theme-back">A</div> </div>
+                        <div className="col"><div className="theme-back">A</div> </div>
+                        <div className="col" ><div className="theme-back">A</div> </div>
+                        <div className="col" ><div className="theme-back">A</div> </div>
+                      </div>
+                      <div className="row mt-2">
+                        <div className="col"><div className="theme-back">A</div> </div>
+                        <div className="col"><div className="theme-back">A</div> </div>
+                        <div className="col"><div className="theme-back">A</div> </div>
+                        <div className="col" ><div className="theme-back">A</div> </div>
+                        <div className="col" ><div className="theme-back">A</div> </div>
+                        </div>
+                        <div className="row mt-2">
+                        <div className="col"><div className="theme-back">A</div> </div>
+                        <div className="col"><div className="theme-back">A</div> </div>
+                        <div className="col"><div className="theme-back">A</div> </div>
+                        <div className="col" ><div className="theme-back">A</div> </div>
+                        <div className="col" ><div className="theme-back">A</div> </div>
+                        </div>
+                        <div className="row mt-2">
+                        <div className="col"><div className="theme-back">A</div> </div>
+                        <div className="col"><div className="theme-back">A</div> </div>
+                        <div className="col"><div className="theme-back">A</div> </div>
+                        <div className="col" ><div className="theme-back">A</div> </div>
+                        <div className="col" ><div className="theme-back">A</div> </div>
+                        </div>
+                        <div className="row mt-2">
+                          <div className="col"><div className="theme-back">A</div> </div>
+                          <div className="col"><div className="theme-back">A</div> </div>
+                          <div className="col"><div className="theme-back">A</div> </div>
+                          <div className="col" ><div className="theme-back">A</div> </div>
+                          <div className="col" ><div className="theme-back">A</div> </div>
+                        </div>
+                        <div className="row mt-2">
+                          <div className="col"><div className="theme-back">A</div> </div>
+                          <div className="col"><div className="theme-back">A</div> </div>
+                          <div className="col"><div className="theme-back">A</div> </div>
+                          <div className="col" ><div className="theme-back">A</div> </div>
+                          <div className="col" ><div className="theme-back">A</div> </div>
+                        </div>
+                    </div>
+                  </div>
+                </li>
               </ul>
-              <button type="button" className="btn btn-primary mb-3">Save</button>
+              <button type="button" className="btn btn-primary mt-5">Save</button>
             </div>
             <div className="card-footer bg-transparent">
               <a href="#!" className=" text-white"></a>
