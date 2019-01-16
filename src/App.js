@@ -243,7 +243,7 @@ class App extends Component {
               <nav aria-label="...">
                 <ul className="pagination justify-content-end mb-0">
                   <li className="page-item disabled">
-                    <a className="page-link" href="#" tabindex="-1">
+                    <a className="page-link" href="#" tabIndex="-1">
                       <i className="fas fa-angle-left"></i>
                       <span className="sr-only">Previous</span>
                     </a>
