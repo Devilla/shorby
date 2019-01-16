@@ -81,60 +81,60 @@ export default class CreateLink extends Component {
                       <span className="mt-3 mb-3 pl-2 text-sm text-white"><strong>Themes</strong></span>
 
                       <div className="row">
-                        <div className="col"><div className="theme-back">A</div> </div>
-                        <div className="col"><div className="theme-back">A</div> </div>
-                        <div className="col"><div className="theme-back">A</div> </div>
-                        <div className="col" ><div className="theme-back">A</div> </div>
-                        <div className="col" ><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'white', borderRadius:'5px'}}><div className="theme-back" style={{background:'black', color:'white'}}>A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
                       </div>
                       <div className="row mt-2">
-                        <div className="col"><div className="theme-back">A</div> </div>
-                        <div className="col"><div className="theme-back">A</div> </div>
-                        <div className="col"><div className="theme-back">A</div> </div>
-                        <div className="col" ><div className="theme-back">A</div> </div>
-                        <div className="col" ><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
                       </div>
                       <div className="row mt-2">
-                        <div className="col"><div className="theme-back">A</div> </div>
-                        <div className="col"><div className="theme-back">A</div> </div>
-                        <div className="col"><div className="theme-back">A</div> </div>
-                        <div className="col" ><div className="theme-back">A</div> </div>
-                        <div className="col" ><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
                       </div>
                       <div className="row mt-2">
-                        <div className="col"><div className="theme-back">A</div> </div>
-                        <div className="col"><div className="theme-back">A</div> </div>
-                        <div className="col"><div className="theme-back">A</div> </div>
-                        <div className="col" ><div className="theme-back">A</div> </div>
-                        <div className="col" ><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
                         </div>
                         <div className="row mt-2">
-                        <div className="col"><div className="theme-back">A</div> </div>
-                        <div className="col"><div className="theme-back">A</div> </div>
-                        <div className="col"><div className="theme-back">A</div> </div>
-                        <div className="col" ><div className="theme-back">A</div> </div>
-                        <div className="col" ><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
                         </div>
                         <div className="row mt-2">
-                        <div className="col"><div className="theme-back">A</div> </div>
-                        <div className="col"><div className="theme-back">A</div> </div>
-                        <div className="col"><div className="theme-back">A</div> </div>
-                        <div className="col" ><div className="theme-back">A</div> </div>
-                        <div className="col" ><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
                         </div>
                         <div className="row mt-2">
-                          <div className="col"><div className="theme-back">A</div> </div>
-                          <div className="col"><div className="theme-back">A</div> </div>
-                          <div className="col"><div className="theme-back">A</div> </div>
-                          <div className="col" ><div className="theme-back">A</div> </div>
-                          <div className="col" ><div className="theme-back">A</div> </div>
+                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
                         </div>
                         <div className="row mt-2">
-                          <div className="col"><div className="theme-back">A</div> </div>
-                          <div className="col"><div className="theme-back">A</div> </div>
-                          <div className="col"><div className="theme-back">A</div> </div>
-                          <div className="col" ><div className="theme-back">A</div> </div>
-                          <div className="col" ><div className="theme-back">A</div> </div>
+                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
                         </div>
                     </div>
                   </div>

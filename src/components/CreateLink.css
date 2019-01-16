@@ -29,8 +29,11 @@
 .theme-color {
     background:#433;
 }
+.col-b{
+  border-radius: '10px';
+}
 .theme-back {
-  width: 50%;
+  width: 45%;
   padding: 10px;
   color:#333;
   background:#fff;
