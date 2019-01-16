@@ -8,7 +8,8 @@ export default class CreateLink extends Component {
     super();
     this.state = {
       layoutWidth:'500px',
-      backgroundColor:'#883a75'
+      backgroundColor:'#883a75',
+      pageTitle:'Test'
     }
   }
     render(){
@@ -72,7 +73,8 @@ export default class CreateLink extends Component {
                     </div>
                     <div>
                       <span className="pl-2 text-sm text-white"><strong>Page Title</strong></span>
-                      <input type="text" name="" value="Test" placeholder="Rediff/Blog" className="form-control"/>
+                      <input type="text" name="" value={this.state.pageTitle} onChange={(e)=>{this.setState({pageTitle:e.target.value});
+                    console.log(this.state.pageTitle);}} placeholder="Rediff/Blog" className="form-control"/>
                     </div>
                   </div>
                 </li>
@@ -122,36 +124,19 @@ export default class CreateLink extends Component {
                         <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
                         <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
                         </div>
-                        <div className="row mt-2">
-                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
-                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
-                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
-                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
-                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
-                        </div>
-                        <div className="row mt-2">
-                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
-                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
-                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
-                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
-                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
-                        </div>
                     </div>
                   </div>
                 </li>
               </ul>
-              <button type="button" className="btn btn-primary mt-5">Save</button>
-            </div>
-            <div className="card-footer bg-transparent">
-              <a href="#!" className=" text-white"></a>
+              <button type="button" className="btn btn-primary">Save</button>
             </div>
           </div>
 
         </div>
-        <div  className="col" style={{ border:'1px solid black', background:this.state.backgroundColor, backgroundImage:this.state.backgroundImage, height:'1029px', maxWidth:this.state.layoutWidth, borderRadius:'10px'}}>
+        <div  className="col" style={{ border:'1px solid black', background:this.state.backgroundColor, backgroundImage:this.state.backgroundImage, height:'1009px', maxWidth:this.state.layoutWidth, borderRadius:'10px'}}>
         <div className="container">
         <header>
-        <h1 align="center" style={{color:'white'}}>Test</h1>
+        <h1 align="center" style={{color:'white'}}>{this.state.pageTitle}</h1>
         </header>
         <div className="row">
         <div className= "col" style={{background:'#ffffff', borderRadius:'50px', margin:'auto'}}><img src ="insta.jpeg" width="30px"/></div>
