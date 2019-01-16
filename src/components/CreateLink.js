@@ -7,7 +7,8 @@ export default class CreateLink extends Component {
   constructor() {
     super();
     this.state = {
-      layoutWidth:'500px'
+      layoutWidth:'500px',
+      backgroundColor:'#883a75'
     }
   }
     render(){
@@ -79,62 +80,61 @@ export default class CreateLink extends Component {
                   <div className="d-flex align-items-center">
                     <div>
                       <span className="mt-3 mb-3 pl-2 text-sm text-white"><strong>Themes</strong></span>
-
                       <div className="row">
-                        <div className="col m-1 p-2" style={{background:'white', borderRadius:'5px'}}><div className="theme-back" style={{background:'black', color:'white'}}>A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'white'})} }  className="col m-1 p-2" style={{cursor:'pointer',background:'white', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back" style={{background:'black', color:'white'}}>A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'#597af6'})} } className="col m-1 p-2" style={{background:'#597af6', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'#bb3d43', backgroundImage:'linear-gradient(to bottom, #bb3d43, #dd5444)'})} } className="col m-1 p-2" style={{background:'#bb3d43',backgroundImage:'linear-gradient(to bottom, #bb3d43, #dd5444)', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'#50c9c3', backgroundImage: 'linear-gradient(to bottom, #50c9c3, #96deda)'})} } className="col m-1 p-2" style={{background:'#50c9c3', backgroundImage: 'linear-gradient(to bottom, #50c9c3, #96deda)', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
                       </div>
                       <div className="row mt-2">
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'#ff0084', backgroundImage: 'linear-gradient(to bottom, #ff0084, #33001b)'})} } className="col m-1 p-2" style={{background:'#ff0084',backgroundImage: 'linear-gradient(to bottom, #ff0084, #33001b)', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black', backgroundImage: 'linear-gradient(to bottom, #a044ff, #6a3093)'})} } className="col m-1 p-2" style={{background:'black', backgroundImage: 'linear-gradient(to bottom, #a044ff, #6a3093)', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'#c24e9a', backgroundImage: 'linear-gradient(111.7deg, #fbc606 2.4%, #e0525f 28.3%, #c24e9a 46.2%, #20adbe 79.4%, #169e5f 100.2%)'})} } className="col m-1 p-2" style={{background:'#c24e9a', backgroundImage: 'linear-gradient(111.7deg, #fbc606 2.4%, #e0525f 28.3%, #c24e9a 46.2%, #20adbe 79.4%, #169e5f 100.2%)', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black', backgroundImage:'radial-gradient(circle farthest-corner at -4% -12.9%, #4a626e 0.3%, #1e2130 90.2%)'})} } className="col m-1 p-2" style={{background:'black', backgroundImage:'radial-gradient(circle farthest-corner at -4% -12.9%, #4a626e 0.3%, #1e2130 90.2%)', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black', backgroundImage:'linear-gradient(135deg, #79F1A4 10%, #0E5CAD 100%)'})} } className="col m-1 p-2" style={{background:'black', backgroundImage:'linear-gradient(135deg, #79F1A4 10%, #0E5CAD 100%)', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
                       </div>
                       <div className="row mt-2">
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
                       </div>
                       <div className="row mt-2">
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
                         </div>
                         <div className="row mt-2">
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
                         </div>
                         <div className="row mt-2">
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                        <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                        <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
                         </div>
                         <div className="row mt-2">
-                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
                         </div>
                         <div className="row mt-2">
-                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
-                          <div className="col m-1 p-2" style={{background:'black', borderRadius:'5px'}}><div className="theme-back">A</div> </div>
+                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
+                          <div onClick={()=>{this.setState({backgroundColor:'black'})} } className="col m-1 p-2" style={{background:'black', borderRadius:'5px', border: '1px solid black'}}><div className="theme-back">A</div> </div>
                         </div>
                     </div>
                   </div>
@@ -148,7 +148,7 @@ export default class CreateLink extends Component {
           </div>
 
         </div>
-        <div  className="col" style={{background:'#883a75', height:'1029px', maxWidth:this.state.layoutWidth, borderRadius:'10px'}}>
+        <div  className="col" style={{ border:'1px solid black', background:this.state.backgroundColor, backgroundImage:this.state.backgroundImage, height:'1029px', maxWidth:this.state.layoutWidth, borderRadius:'10px'}}>
         <div className="container">
         <header>
         <h1 align="center" style={{color:'white'}}>Test</h1>
