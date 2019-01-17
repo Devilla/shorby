@@ -138,7 +138,7 @@ export default class CreateLink extends Component {
         <div  className="col" style={{ border:'1px solid black', background:this.state.backgroundColor, backgroundImage:this.state.backgroundImage, height:'1009px', maxWidth:this.state.layoutWidth, borderRadius:'10px'}}>
         <div className="container">
         <header>
-        <h1 align="center" style={{color:this.state.backgroundColor!='white'?'#ffffff':'black'}}>{this.state.pageTitle}</h1>
+        <h1 align="center" style={{color:this.state.backgroundColor!='white'?'white':'black'}}>{this.state.pageTitle}</h1>
         </header>
         <div className="row">
         <div className= "col" style={{background:this.state.backgroundColor!='white'?'#ffffff':'black', borderRadius:'50px', margin:'auto'}}>
