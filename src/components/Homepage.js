@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../assets/css/argon.css';
 import { BrowserRouter, Route, Link, Redirect } from 'react-router-dom';
-import CreateLink from './CreateLink';
+
 
 class Homepage extends Component {
   constructor(){
@@ -17,20 +17,19 @@ class Homepage extends Component {
   render() {
     return (
       <div className="App">
-      <BrowserRouter>
       <div>
-      <Route path='/create-link'  component={CreateLink}/>
       <div className="row">
         <div className="col">
           <div className="card shadow">
             <div className="card-header border-0">
               <h3 style={{color:'#5e72e4', fontWeight:'bold', fontSize:'22px'}} className="mb-0">Brand Name</h3>
             </div>
-
             <button className="btn btn-icon btn-3 btn-info" type="button" style={{marginLeft: '20px', width: '200px'}}>
-            <Link to='/create-link' style={{color:'#ffffff', marginLeft:'10px'}}>
+            <Link to='/create-link'>
+            <div style={{color:'#ffffff', marginLeft:'10px'}}>
               <span className="btn-inner--icon"><i className="ni ni-circle-08"></i></span>
               <span className="btn-inner--text" >Create Bio Link</span>
+              </div>
               </Link>
             </button>
             <div className="table-responsive" style={{marginTop:"50px"}}>
@@ -269,7 +268,6 @@ class Homepage extends Component {
         </div>
       </div>
       </div>
-      </BrowserRouter>
       </div>
     );
   }
