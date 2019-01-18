@@ -43,11 +43,11 @@ export default class CreateLink extends Component {
                 <li>
                   <div className="d-flex align-items-center">
                     <div className="dropdown">
-                        <a href="#" className="btn btn-default dropdown-toggle " data-toggle="dropdown" id="navbarDropdownMenuLink2" style={{background:'#fff', borderRadius:'50px', marginLeft:'-5px'}}>
+                      <a href="#" className="btn btn-default dropdown-toggle " data-toggle="dropdown" id="navbarDropdownMenuLink2" style={{background:'#fff', borderRadius:'50px', marginLeft:'-5px'}}>
                       <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/1999/xlink" height="25pt" viewBox="0 0 512 512" width="25pt">
                       <linearGradient id="a">
-                      <stop offset="0" stop-color="#2af598"/>
-                      <stop offset="1" stop-color="#009efd"/>
+                      <stop offset="0" stop-color={this.state.backgroundColor}/>
+                      <stop offset="1" stop-color={this.state.backgroundColor}/>
                       </linearGradient>
                       <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="255.7523048184" x2="255.7523048184" href="#a" y1="0" y2="512.0000297334"/>
                       <linearGradient id="c" gradientUnits="userSpaceOnUse" x1="257.750272915" x2="257.750272915" href="#a" y1="141.862828" y2="361.650308"/>
