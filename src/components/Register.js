@@ -3,8 +3,8 @@ const axios = require('axios');
 // Request API.
 axios
   .post('http://localhost:1337/auth/local/register', {
-    username: 'Devilla',
-    email: 'dev@gmail.io',
+    username: 'sanju',
+    email: 'sanjumoda049@gmail.com',
     password: '123456789'
   })
   .then(response => {
