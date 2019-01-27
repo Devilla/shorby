@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import {browserHistory} from 'react-router';
+import { BrowserRouter, Route, Link, Redirect } from 'react-router-dom';
 
 export default class Register extends Component {
   constructor() {
@@ -22,6 +24,7 @@ export default class Register extends Component {
         console.log('Well done!');
         console.log('User profile', response.data.user);
         console.log('User token', response.data.jwt);
+        browserHistory.push('/dashboard');
       })
       .catch(error => {
         // Handle error.
@@ -30,6 +33,7 @@ export default class Register extends Component {
   }
   render(){
     return(
+      <BrowserRouter>
       <div className="main-content">
     <div className="header bg-gradient-primary py-7 py-lg-8 pt-lg-9">
       <div className="container">
@@ -37,7 +41,7 @@ export default class Register extends Component {
           <div className="row justify-content-center">
             <div className="col-xl-5 col-lg-6 col-md-8 px-5">
               <h1 className="text-white">Create an account</h1>
-              <p className="text-lead text-white">Use these awesome forms to login or create new account in your project for free.</p>
+              <p className="text-lead text-white">Use the below form to login or create new account.</p>
             </div>
           </div>
         </div>
@@ -118,6 +122,7 @@ export default class Register extends Component {
       </div>
     </div>
     </div>
+    </BrowserRouter>
     );
   }
 }
