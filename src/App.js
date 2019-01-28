@@ -6,8 +6,8 @@ import Homepage from './components/Homepage';
 import CreateLink from './components/CreateLink';
 import Login from './components/Login';
 import Register from './components/Register';
-
-
+import ForgotPassword from './components/ForgotPassword';
+import ResetPassword from './components/ResetPassword';
 
 
 class App extends Component {
@@ -18,6 +18,8 @@ class App extends Component {
       <div className="App">
       <Route path='/register' component={Register} />
       <Route path='/login' component={Login} />
+      <Route path='/reset-password' component={ResetPassword} />
+      <Route path='/forgot-password' component={ForgotPassword} />
       <Route path='/dashboard' component={Homepage} />
       <Route path='/create-link' component={CreateLink} />
       </div>

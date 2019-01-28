@@ -12,7 +12,6 @@ export default class Login extends Component {
   }
 
   handleLogin = () => {
-
     // Request API.
     axios
       .post('http://localhost:1337/auth/local', {
