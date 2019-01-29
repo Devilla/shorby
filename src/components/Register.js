@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import {browserHistory} from 'react-router';
 import { BrowserRouter, Route, Link, Redirect } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+
+const history = createBrowserHistory();
 
 export default class Register extends Component {
   constructor() {
@@ -24,7 +26,7 @@ export default class Register extends Component {
         console.log('Well done!');
         console.log('User profile', response.data.user);
         console.log('User token', response.data.jwt);
-        browserHistory.push('/dashboard');
+        history.push('/dashboard');
       })
       .catch(error => {
         // Handle error.
@@ -113,7 +115,9 @@ export default class Register extends Component {
                   </div>
                 </div>
                 <div className="text-center">
+                <Link to='/dashboard'>
                   <button type="button" className="btn btn-primary mt-4" onClick={this.handleRegisterClick}>Create account</button>
+                </Link>
                 </div>
               </form>
             </div>

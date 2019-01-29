@@ -1,5 +1,9 @@
 import React , {Component} from 'react';
 import axios from 'axios';
+import { createBrowserHistory } from 'history';
+import { Link } from 'react-router-dom';
+
+const history = createBrowserHistory();
 
 
 export default class Login extends Component {
@@ -23,7 +27,7 @@ export default class Login extends Component {
         console.log('Well done!');
         console.log('User profile', response.data.user);
         console.log('User token', response.data.jwt);
-
+        history.push('/dashboard');
         // // Request API.
         // axios
         //   .get('http://localhost:1337/posts', {
@@ -99,7 +103,9 @@ export default class Login extends Component {
                   </label>
                 </div>
                 <div className="text-center">
+                  <Link to='/dashboard'>
                   <button type="button" className="btn btn-primary my-4" onClick={this.handleLogin}>Sign in</button>
+                  </Link>
                 </div>
               </form>
             </div>
