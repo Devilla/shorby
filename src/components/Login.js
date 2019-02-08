@@ -18,7 +18,7 @@ export default class Login extends Component {
   handleLogin = () => {
     // Request API.
     axios
-      .post('http://localhost:1337/auth/local', {
+      .post('http://139.59.92.199:1337/auth/local', {
           identifier: this.state.email,
           password: this.state.password
       })
@@ -30,7 +30,7 @@ export default class Login extends Component {
         history.push('/dashboard');
         // // Request API.
         // axios
-        //   .get('http://localhost:1337/posts', {
+        //   .get('http://139.59.92.199:1337/posts', {
         //     headers: {
         //       Authorization: `Bearer ${response.data.jwt}`
         //     }

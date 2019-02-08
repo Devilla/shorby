@@ -16,7 +16,7 @@ export default class Register extends Component {
   }
   handleRegisterClick =  () => {
     axios
-      .post('http://localhost:1337/auth/local/register', {
+      .post('http://139.59.92.199:1337/auth/local/register', {
         username: this.state.username,
         email: this.state.email,
         password: this.state.password
