@@ -14,7 +14,7 @@ export default class ResetPassword extends Component {
   handleResetPassword = () => {
     // Request API.
     axios
-      .post('http://localhost:1337/auth/reset-password', {
+      .post('http://139.59.92.199:1337/auth/reset-password', {
         code: this.state.code,
         password: this.state.password,
         passwordConfirmation: this.state.confirmPassword

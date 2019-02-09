@@ -12,7 +12,7 @@ export default class ForgotPassword extends Component {
 handleForgotPassword = () => {
   // Request API.
   axios
-    .post('http://localhost:1337/auth/forgot-password', {
+    .post('http://139.59.92.199:1337/auth/forgot-password', {
       email: this.state.email,
       url: 'http:/localhost:1337/admin/plugins/users-permissions/auth/reset-password'
     })
