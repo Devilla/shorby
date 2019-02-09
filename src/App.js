@@ -22,7 +22,6 @@ class App extends Component {
       <Route path='/forgot-password' component={ForgotPassword} />
       <Route path='/dashboard' component={Homepage} />
       <Route path='/create-link' component={CreateLink} />
-      <Redirect to='/login'/>
       </div>
       </BrowserRouter>
     );
